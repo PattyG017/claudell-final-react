@@ -1,0 +1,84 @@
+.navbar {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 120px;
+  width: auto;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+  color: #4b2e2e;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 0.2rem;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navLinks li {
+  position: relative;
+}
+
+.navLinks a,
+.navLinks span {
+  text-decoration: none;
+  color: #4b2e2e;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.navLinks a:hover,
+.navLinks span:hover {
+  color: #4ed6de; /* turquesa */
+}
+
+/* Submenú */
+.dropdownMenu {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  list-style: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 10;
+}
+
+.dropdown:hover .dropdownMenu {
+  display: block;
+}
+
+.dropdownMenu li {
+  margin-bottom: 0.4rem;
+}
+
+.dropdownMenu li:last-child {
+  margin-bottom: 0;
+}

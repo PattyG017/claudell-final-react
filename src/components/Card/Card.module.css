@@ -1,0 +1,61 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #4b2e2e;
+  flex-grow: 1;
+}
+
+.price {
+  font-weight: bold;
+  color: #4b2e2e;
+  margin-top: 0.5rem;
+}
+
+.button {
+  margin-top: 0.5rem;
+  background-color: #4ed6de; /* Turquesa Claudell */
+  border: none;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #36bdbd; /* Un poco más oscuro al pasar el mouse */
+}
+
